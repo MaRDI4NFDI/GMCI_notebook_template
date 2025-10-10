@@ -7,7 +7,7 @@ authors: # see https://quarto.org/docs/journals/authors.html for further options
     country: CountryABC
 ---
 
-# PC Algorithm for Causal Discovery
+# Your Notebook Name
 
 | Resource | Information |
 |----|----|
@@ -25,7 +25,8 @@ Write an introduction to the analysis. Give references via @Mareis_Haug_Drton_20
 
 Create an R environment and save it in the file `renv.lock` with `renv::init()` and `renv::snapshot()`. For detailed information, see the [renv website](https://rstudio.github.io/renv/articles/renv.html).
 Load the R environment with our standardized loading function.
-```{r, message=TRUE, warning=TRUE, eval=TRUE}
+```{r, message=TRUE, warning=TRUE, eval=FALSE}
+# activate the chunk with eval=TRUE
 source("../../load_environment.R")
 ```
 
@@ -37,7 +38,7 @@ library(package2) # function of package2
 ```
 
 Load the data. Prefereably from Zenodo:
-```{r, message = FALSE, warning=FALSE}
+```{r, message = FALSE, warning=FALSE, eval=FALSE}
 # Load Data
 zenodo <- ZenodoManager$new(logger = NULL)
 record <- zenodo$getRecordByDOI("10.5281/zenodo.1234567")
@@ -50,13 +51,16 @@ alarm <- as.matrix(read.csv(files[1, 4]))
 Write some educational analysis text and carry out the analysis.
 
 ```{r}
-print('Code chunk')
+mean(c(1 + 2, 3 * 4))
 ```
 
+Analysis in other languages, e.g., Python are welcome as well. 
+```{python}
+-1 / -2
+```
 
-
-
-```{r, message=FALSE, warning=FALSE, eval=TRUE}
+```{r, message=FALSE, warning=FALSE, eval=FALSE}
+# activate the chunk with eval=TRUE
 source("../../close_environment.R")
 ```
 
