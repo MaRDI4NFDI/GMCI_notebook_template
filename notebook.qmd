@@ -11,8 +11,8 @@ authors: # see https://quarto.org/docs/journals/authors.html for further options
 
 | Resource | Information |
 |----|----|
-| Data DOI | [10.5281/zenodo.1234567](10.5281/zenodo.1234567) |
-| Git + DOI | [Git](https://github.com/username/project) [10.5281/zenodo.7654321](10.5281/zenodo.754321) |
+| Data DOI | [10.5281/zenodo.1234567](https://doi.org/10.5281/zenodo.1234567) |
+| Git + DOI | [Git](https://github.com/MaRDI4NFDI/GMCI_notebook_template/tree/683067d4f2c2d7e83f221e7bfbb0ae9b77aa93a5) [10.5281/zenodo.7654321](https://doi.org/10.5281/zenodo.754321) |
 | Short Description | Short description of the main contributions and notebook structure |
 
 : {.striped}
